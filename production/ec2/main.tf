@@ -56,7 +56,7 @@ data "terraform_remote_state" "elb" {
 
 
 data "vault_generic_secret" "generic-pem" {
-  path = "secret/pem/${var.tag-name}"
+  path = "secret/pem/generic"
 }
 
 data "aws_ami" "ubuntu" {
